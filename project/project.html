@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-image: url(https://cdn.pixabay.com/photo/2014/12/24/05/02/drop-of-water-578897_1280.jpg);
+            height: fit-content;
+            width: fit-content;
+            opacity: 50%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Random Quote Generator</h1>
+    <div id="quote-container">
+        <p id="quote-text">Click the button to get a quote!</p>
+        <button onclick="getRandomQuote()">Generate Quote</button>
+    </div>
+
+
+    <script>
+        // Array of quotes
+        const quotes = [
+            "Never say NO, Never say, 'I cannot', for you are INFINITE. All the power is WITHIN you. You can do anything.-Swami Vivekananda",
+            "The only way to do great work is to love what you do. - Steve Jobs",
+            "In the end, we will remember not the words of our enemies, but the silence of our friends. - Martin Luther King Jr.",
+            "The greatest glory in living lies not in never falling, but in rising every time we fall. - Nelson Mandela",
+            "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt",
+            "It does not matter how slowly you go as long as you do not stop. - Confucius",
+            "Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill",
+            "One day or the day one.-APJ.abdul Kalam",
+            "you can you will all power is with you.-Swami Vivekananda",
+            "The road to hell is paved with adverbs.—Stephen King",
+            "Who wants to become a writer ? And why ? Because it’s the answer to everything. … It’s the streaming reason for living.To note, to pin down, to build up, to create, to be astonished at nothing, to cherish the oddities, to let nothing go down the drain, to make something, to make a great flower out of life, even if it’s a cactus.”—Enid Bagnold",
+            "Cheat your landlord if you can and must, but do not try to shortchange the Muse.It cannot be done.You cant fake quality any more than you can fake a good meal.—William S.Burroughs",
+           " Learn everything that is good from others, but bring it in, and in your own way adsorb it; do not become others.-Swami vivekananda"
+        ];
+
+        // Function to get a random quote
+        function getRandomQuote() {
+            var randomIndex = Math.floor(Math.random() * quotes.length);
+            quoteText = document.getElementById("quote-text");
+            quoteText.textContent = quotes[randomIndex];
+        }
+    </script>
+</body>
+
+</html>
