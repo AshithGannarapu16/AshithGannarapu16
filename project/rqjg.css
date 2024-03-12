@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #f4f4f4;
+    background-color: antiquewhite;
+    text-align: center;
+    background-image: url("https://cdn.pixabay.com/photo/2014/12/24/05/02/drop-of-water-578897_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+
+#quote-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#joke-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+    color: #333;
+}
+
+h3 {
+    color: #333;
+}
+
+#quote-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#joke-text {
+    font-size: 18px;
+    margin-bottom: 20Px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+
+button:hover {
+    background-color: #08f814;
+
+}
